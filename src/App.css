@@ -1,0 +1,138 @@
+/* Updated App.css */
+
+/* Center the root app container */
+#root {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  
+  margin: auto; /* Remove default margin */
+  background-image: url("src\assets\background.png");
+  background-position: center;
+  background-size: cover; /* Ensure the image covers the whole container */
+  opacity: 0.9;
+  text-align: center;
+  width: 100%;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+div{
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  gap: 20px;
+}
+
+/* Section containers for upload and results */
+.file-upload, .results {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 1rem;
+  border: 5px solid white;
+  border-radius: 8px;
+  background-color: #edebeb;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+}
+
+/* Heading styles */
+h1 {
+  color: #d7d3d3;
+  -webkit-text-stroke: 2px rgb(255, 255, 255); /* Stroke for emphasis */
+  text-decoration: underline;
+  text-decoration-color: #d5d5d5;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3f4348;
+  margin-bottom: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Input file styling */
+input[type="file"] {
+  display: block;
+  background-color: #8d8e90;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 5px solid whitesmoke;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph styles */
+p {
+  color: #3f4348;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+/* Waste Segregation Info component styles */
+.waste-info {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  text-align: left;
+  line-height: 1.6;
+  border: 3px solid #d5d5d5;
+}
+
+.waste-info h2 {
+  color: #3f4348;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.waste-info ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.waste-info ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #595959;
+}
+
+.waste-info p {
+  color: #595959;
+  font-size: 1rem;
+  font-weight: 500;
+}
